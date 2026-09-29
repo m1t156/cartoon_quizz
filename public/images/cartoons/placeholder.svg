@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="400" height="300" viewBox="0 0 400 300">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FFD166"/>
+      <stop offset="50%" stop-color="#FF6B35"/>
+      <stop offset="100%" stop-color="#EF476F"/>
+    </linearGradient>
+    <pattern id="grid" width="20" height="20" patternUnits="userSpaceOnUse">
+      <circle cx="2" cy="2" r="1.5" fill="#121316" opacity="0.15"/>
+    </pattern>
+  </defs>
+  <rect width="400" height="300" fill="url(#bg)"/>
+  <rect width="400" height="300" fill="url(#grid)"/>
+  <rect x="15" y="15" width="370" height="270" rx="16" fill="none" stroke="#121316" stroke-width="4"/>
+  <g transform="translate(160, 80)">
+    <rect x="0" y="0" width="80" height="60" rx="12" fill="#121316"/>
+    <rect x="6" y="6" width="68" height="48" rx="8" fill="#FDF8EC"/>
+    <circle cx="25" cy="30" r="6" fill="#121316"/>
+    <circle cx="55" cy="30" r="6" fill="#121316"/>
+    <path d="M 28 42 Q 40 50 52 42" stroke="#121316" stroke-width="3" fill="none" stroke-linecap="round"/>
+    <line x1="20" y1="-15" x2="35" y2="0" stroke="#121316" stroke-width="4" stroke-linecap="round"/>
+    <line x1="60" y1="-15" x2="45" y2="0" stroke="#121316" stroke-width="4" stroke-linecap="round"/>
+    <circle cx="20" cy="-15" r="4" fill="#EF476F"/>
+    <circle cx="60" cy="-15" r="4" fill="#EF476F"/>
+  </g>
+  <text x="200" y="195" font-family="'Outfit', 'Inter', sans-serif" font-weight="900" font-size="22" fill="#121316" text-anchor="middle">CARTOON SUPER CUP</text>
+  <text x="200" y="225" font-family="monospace" font-weight="700" font-size="14" fill="#121316" opacity="0.8" text-anchor="middle">CONTESTANT POSTER</text>
+</svg>

@@ -1,0 +1,99 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@400;600;700;800;900&family=Space+Grotesk:wght@500;700&family=Inter:wght@400;500;600;700&display=swap');
+@import "tailwindcss";
+
+:root {
+  --bg-main: #FBF8F1;
+  --bg-card: #FFFFFF;
+  --text-dark: #121316;
+  --text-muted: #64748B;
+  --accent-yellow: #FFD166;
+  --accent-orange: #FF6B35;
+  --accent-blue: #004E89;
+  --accent-red: #EF476F;
+  --accent-green: #06D6A0;
+  --border-black: #121316;
+}
+
+body {
+  background-color: var(--bg-main);
+  color: var(--text-dark);
+  font-family: 'Inter', sans-serif;
+  min-height: 100vh;
+  margin: 0;
+  overflow-x: hidden;
+  background-image: radial-gradient(#d5cfc2 1px, transparent 1px);
+  background-size: 24px 24px;
+}
+
+h1, h2, h3, h4, .font-heading {
+  font-family: 'Outfit', 'Space Grotesk', sans-serif;
+  letter-spacing: -0.02em;
+}
+
+.font-arcade {
+  font-family: 'Space Grotesk', monospace;
+  font-weight: 700;
+}
+
+/* Retro Cartoon Box Shadows */
+.retro-card {
+  background: #FFFFFF;
+  border: 3px solid var(--border-black);
+  box-shadow: 4px 4px 0px #121316;
+  transition: transform 0.15s ease, box-shadow 0.15s ease;
+}
+
+.retro-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 7px 7px 0px #121316;
+}
+
+.retro-card:active {
+  transform: translateY(1px);
+  box-shadow: 2px 2px 0px #121316;
+}
+
+.retro-btn {
+  font-family: 'Outfit', sans-serif;
+  font-weight: 800;
+  text-transform: uppercase;
+  border: 3px solid #121316;
+  box-shadow: 4px 4px 0px #121316;
+  transition: all 0.12s cubic-bezier(0.4, 0, 0.2, 1);
+  user-select: none;
+}
+
+.retro-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 6px 6px 0px #121316;
+}
+
+.retro-btn:active {
+  transform: translateY(2px);
+  box-shadow: 2px 2px 0px #121316;
+}
+
+/* Pulse Selection Glow */
+@keyframes winnerPulse {
+  0% { transform: scale(1); border-color: #06D6A0; }
+  50% { transform: scale(1.03); border-color: #06D6A0; box-shadow: 0 0 0 6px rgba(6, 214, 160, 0.4); }
+  100% { transform: scale(1); border-color: #06D6A0; }
+}
+
+.winner-selected {
+  animation: winnerPulse 0.3s ease-in-out forwards;
+  background-color: #F0FDF4 !important;
+}
+
+/* Custom Scrollbars */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+::-webkit-scrollbar-track {
+  background: #F1F5F9;
+}
+::-webkit-scrollbar-thumb {
+  background: #94A3B8;
+  border-radius: 4px;
+}
